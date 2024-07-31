@@ -8,9 +8,9 @@ use Livewire\Component;
 
 class Clicker extends Component
 {
-    public ?string $name = null;
-    public ?string $email = null;
-    public ?string $password = null;
+    public $name = null;
+    public $email = null;
+    public $password = null;
 
     public function createNewUser()
     {
@@ -26,12 +26,10 @@ class Clicker extends Component
     }
     public function render()
     {
-        $title = "Test";
         $users = User::all();
 
         return view('livewire.clicker', [
             'users' => $users,
-            'title' => $title
         ]);
     }
 }
