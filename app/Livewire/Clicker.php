@@ -30,6 +30,7 @@ class Clicker extends Component
 
         return view('livewire.clicker', [
             'users' => $users,
+            
         ]);
     }
 }
