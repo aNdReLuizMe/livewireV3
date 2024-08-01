@@ -12,3 +12,4 @@
         <h3>{{ $user->name }} - {{ $user->email }} - {{ $user->password }}</h3>
     @endforeach
 </div>
+</div>
